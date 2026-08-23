@@ -1,0 +1,5 @@
+Mild
+Moderate
+No_DR
+Proliferate_DR
+Severe
