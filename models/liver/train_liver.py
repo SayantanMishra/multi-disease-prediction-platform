@@ -23,7 +23,7 @@ TRAIN_CSV = "Training_indian_liver_disease_dataset.csv"
 TEST_CSV = "Testing_indian_liver_disease_dataset.csv"
 TARGET_COLUMN = "Liver_Disease_Type"
 DROP_COLUMNS = ["Patient_ID"]
-TOP_N_FEATURES = 12   # <-- kitne top features rakhne hain (change kar sakte ho)
+TOP_N_FEATURES = 12  
 
 # ============================
 # STEP 1: Load and Combine Data
@@ -234,7 +234,7 @@ print("Feature importance chart saved as feature_importance.png")
 joblib.dump(final_model, "best_model.pkl")
 joblib.dump(scaler, "scaler.pkl")
 joblib.dump(encoders, "encoders.pkl")
-joblib.dump(list(X.columns), "columns.pkl")   # ab sirf selected features save honge
+joblib.dump(list(X.columns), "columns.pkl")   
 joblib.dump(best_name, "best_model_name.pkl")
 
 print("\nModel, scaler, encoders saved! Now you can run predict_liver.py.")
